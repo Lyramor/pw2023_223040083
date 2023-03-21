@@ -86,8 +86,8 @@ $mahasiswa = [
     <?php foreach($mahasiswa as $mhs) {?>
     <br>
     <ul>
-        <li>
-            <img src="image/<?= $mhs['foto']; ?>" width = "150" height = "150" border = "3px solid black">
+        <li style ="list-style:none;">
+            <img src="image/<?= $mhs['foto']; ?>" width = "150" height = "150" border = "3px solid black" >
         </li>
         <li>Nama : <?= $mhs['nama']; ?></li>
         <li>NPM : <?= $mhs['npm']; ?></li>
