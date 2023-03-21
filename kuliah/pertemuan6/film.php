@@ -25,7 +25,7 @@
             'sutradara' => ['Domee Shi.']
         ],
         [
-            'poster' => 'big_hero_6.png ',
+            'poster' => 'bighero6.png ',
             'judul' => 'Big Hero 6',
             'tahun' => '2014',
             'genre' => ['animation, ', 
@@ -77,7 +77,7 @@
     <?php  foreach($film as $f) {?>
     <br>
     <ul>
-        <li>
+        <li style ="list-style:none;">
             <img src="images/<?= $f['poster']; ?>" width ="120" height="200" border="3px solid black">
         </li>
         <li>Judul : <?= $f['judul']; ?></li>
