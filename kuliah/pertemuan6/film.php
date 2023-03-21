@@ -4,41 +4,62 @@
             'poster' => 'castle.png ',
             'judul' => 'Howl\'s Moving Castle',
             'tahun' => '2004',
-            'genre' => ['animition,', 'adventure,', 'family.'],
-            'pu' => ['Chieko Baisho,', 'Takuya Kimura,', 'Tatsuya Gatsun.'],
-            'sutradara' => ['Hayao Mizaki', '.']
+            'genre' => ['animition,',
+                        'adventure,', 
+                        'family.'],
+            'pu' => ['Chieko Baisho,',
+                    'Takuya Kimura,', 
+                    'Tatsuya Gatsun.'],
+            'sutradara' => ['Hayao Mizaki.']
         ],
         [
             'poster' => 'turning_red.png ',
             'judul' => 'Turning Red',
             'tahun' => '2022',
-            'genre' => ['animtion, ', 'adventure, ', 'comedy.'],
-            'pu' => ['Rosalie Chiang, ', 'Sandra Oh,', 'Ava Morse.'],
-            'sutradara' => ['Domee Shi', '.']
+            'genre' => ['animtion, ', 
+                        'adventure, ', 
+                        'comedy.'],
+            'pu' => ['Rosalie Chiang, ', 
+                    'Sandra Oh,', 
+                    'Ava Morse.'],
+            'sutradara' => ['Domee Shi.']
         ],
         [
             'poster' => 'big_hero_6.png ',
             'judul' => 'Big Hero 6',
             'tahun' => '2014',
-            'genre' => ['animation, ', 'Adventure, ', 'Comedy.'],
-            'pu' => ['Ryan Potter, ', 'Robert L Baird, ', 'Daniel Gerson.'],
-            'sutradara' => ['Don Hall, ', 'Chris Whilliams.']
+            'genre' => ['animation, ', 
+                        'Adventure, ', 
+                        'Comedy.'],
+            'pu' => ['Ryan Potter, ', 
+                    'Robert L Baird, ', 
+                    'Daniel Gerson.'],
+            'sutradara' => ['Don Hall, ', 
+                            'Chris Whilliams.']
         ],
         [
             'poster' => 'interstellar.png ',
             'judul' => 'Interstellar',
             'tahun' => '2014 - 2021',
-            'genre' => ['Drama,', 'Adventure,', 'Sci-Fi.'],
-            'pu' => ['Matthew McConaughey, ', 'Anne Hathaway, ', 'Jessica Chastain.'],
-            'sutradara' => ['Christopen Nolan', '.']
+            'genre' => ['Drama,', 
+                        'Adventure,', 
+                        'Sci-Fi.'],
+            'pu' => ['Matthew McConaughey, ', 
+                    'Anne Hathaway, ', 
+                    'Jessica Chastain.'],
+            'sutradara' => ['Christopen Nolan.']
         ],
         [
             'poster' => 'sprited.png ',
             'judul' => 'Sprited Away',
             'tahun' => '2001',
-            'genre' => ['animition, ', 'adventure, ', 'family.'],
-            'pu' => ['Dhaveig Chase, ', 'Suzanne Pleshette, ', 'Miyu Irino.'],
-            'sutradara' => ['Hayao Miyazaki', '.']
+            'genre' => ['animition, ', 
+                        'adventure, ', 
+                        'family.'],
+            'pu' => ['Dhaveig Chase, ', 
+                    'Suzanne Pleshette, ', 
+                    'Miyu Irino.'],
+            'sutradara' => ['Hayao Miyazaki.']
         ],
     ]
 ?>
@@ -54,9 +75,10 @@
 <body>
     <h2>Daftar Film</h2>
     <?php  foreach($film as $f) {?>
+    <br>
     <ul>
         <li>
-            <img src="images/<?= $f['poster']; ?>" width ="120" height="200">
+            <img src="images/<?= $f['poster']; ?>" width ="120" height="200" border="3px solid black">
         </li>
         <li>Judul : <?= $f['judul']; ?></li>
         <li>Tahun : <?= $f['tahun']; ?></li>
