@@ -505,12 +505,30 @@ body {
     }
 
     .artikel-page {
-        height: 25.5rem;
+        height: 31rem;
+        width: 20rem;
+    }
+
+    .artikel-page .artikel-img img {
+        height: 13.5rem;
+    }
+
+    .artikel-page h3,
+    .artikel-page p {
+        font-size: 1.3rem;
+    }
+
+    .artikel-page a {
+        font-size: 1.3rem;
     }
 
     .lainnya-page {
-        height: 300px;
+        height: 250px;
         width: 90%;
         font-size: 1.1rem;
+    }
+
+    .navbar .navbar-nav #login {
+        margin-top: 55rem;
     }
 }
