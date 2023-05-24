@@ -20,7 +20,7 @@
     <div class="box">
         <div class="container">
             <div class="right-header">
-                <a href="kitasehat.html"><i class="fa-solid fa-x" style="color : #464646"></i></a>
+                <a href="kitasehat.php"><i class="fa-solid fa-x" style="color : #464646"></i></a>
             </div>
             <div class="top-header">
                 <header>Register</header>
@@ -39,12 +39,12 @@
                 <i class="fa-solid fa-key"></i>
             </div>
             <div class="input-field">
-                <a href="kitasehat.html"><input type="submit" class="submit" value="Login"></a>
+                <a href="kitasehat.php"><input type="submit" class="submit" value="Login"></a>
             </div>
 
             <div class="bottom">
                 <div class="left">
-                    <label><a href="login.html">Login</a></label>
+                    <label><a href="login.php">Login</a></label>
                 </div>
                 <div class="right">
                     <label><a href="#">Forgot password</a></label>
