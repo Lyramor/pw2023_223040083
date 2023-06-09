@@ -1,3 +1,19 @@
+<?php 
+    require 'inc/koneksi.php';
+    require 'inc/functions.php';
+
+    if (isset($_POST["register"])) {
+
+        if(register($_POST) > 0) {
+            echo "<script>
+                    alert('user baru berhasil ditambahkan');
+                </script>";
+        } else {
+            echo mysqli_error($conn);
+        }
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,34 +36,34 @@
     <div class="box">
         <div class="container">
             <div class="right-header">
-                <a href="kitasehat.php"><i class="fa-solid fa-x" style="color : #464646"></i></a>
+                <a href="index.php"><i class="fa-solid fa-x" style="color : #464646"></i></a>
             </div>
             <div class="top-header">
                 <header>Register</header>
             </div>
 
-            <div class="input-field">
-                <input type="text" class="input" placeholder="Username" required>
-                <i class="fa-solid fa-user"></i>
-            </div>
-            <div class="input-field">
-                <input type="password" class="input" placeholder="Password" required>
-                <i class="fa-solid fa-key"></i>
-            </div>
-            <div class="input-field">
-                <input type="password" class="input" placeholder="Confirm Password" required>
-                <i class="fa-solid fa-key"></i>
-            </div>
-            <div class="input-field">
-                <a href="kitasehat.php"><input type="submit" class="submit" value="Login"></a>
-            </div>
+            <form action="" method="post">
+                <div class="input-field">
+                    <input type="text" class="input" name="username" placeholder="Username" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="input-field">
+                    <input type="password" class="input" name="password" placeholder="Password" required>
+                    <i class="fa-solid fa-key"></i>
+                </div>
+                <div class="input-field">
+                    <input type="password" class="input" name="password1" placeholder="Confirm Password" required>
+                    <i class="fa-solid fa-key"></i>
+                </div>
+                <div class="input-field">
+                    <a href="index.php"><input type="submit" name="register" class="submit" value="Register"></a>
+                </div>
+            </form>
+
 
             <div class="bottom">
                 <div class="left">
                     <label><a href="login.php">Login</a></label>
-                </div>
-                <div class="right">
-                    <label><a href="#">Forgot password</a></label>
                 </div>
             </div>
         </div>
