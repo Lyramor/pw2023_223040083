@@ -1,10 +1,14 @@
 <?php  
   require "inc/koneksi.php";
 
+  // Mengambil nilai judul dari parameter GET
+  $judul = htmlspecialchars($_GET['judul']); 
 
-  $judul = htmlspecialchars($_GET['judul']);
-  $queryArtikel = mysqli_query($conn, "SELECT * FROM artikel WHERE judul='$judul'");
-  $artikel = mysqli_fetch_array($queryArtikel);
+  // Mengeksekusi query SQL untuk mengambil data artikel berdasarkan judul
+  $queryArtikel = mysqli_query($conn, "SELECT * FROM artikel WHERE judul='$judul'"); 
+  
+  // Mengambil hasil query dalam bentuk array
+  $artikel = mysqli_fetch_array($queryArtikel); 
   
 ?>
 

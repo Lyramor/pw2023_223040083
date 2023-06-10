@@ -1,9 +1,12 @@
 <?php  
 require "inc/koneksi.php";
 
+// Mengambil data artikel dari tabel "artikel"
 $queryArtikel = mysqli_query($conn, "SELECT id, judul, gambar, sinopsis FROM artikel");
 
+// Mengambil data kategori dari tabel "kategori"
 $queryKategori = mysqli_query($conn, "SELECT * FROM kategori");
+
 
 // Cek apakah terdapat pencarian berdasarkan kata kunci (keyword)
 if (isset($_GET['keyword'])) {
@@ -11,12 +14,12 @@ if (isset($_GET['keyword'])) {
   $queryArtikel = mysqli_query($conn, "SELECT * FROM artikel WHERE judul LIKE '%$keyword%'");
 }
 // Cek apakah terdapat pencarian berdasarkan kategori
-else if (isset($_GET['kategori'])) {
-  $kategori = $_GET['kategori'];
-  $queryGetKategoriId = mysqli_query($conn, "SELECT id FROM kategori WHERE nama='$kategori'");
-  $kategoriId = mysqli_fetch_array($queryGetKategoriId);
-  $queryArtikel = mysqli_query($conn, "SELECT * FROM artikel WHERE kategori_id='$kategoriId[id]'");
-}
+  else if (isset($_GET['kategori'])) {
+    $kategori = $_GET['kategori'];
+    $queryGetKategoriId = mysqli_query($conn, "SELECT id FROM kategori WHERE nama='$kategori'");
+    $kategoriId = mysqli_fetch_array($queryGetKategoriId);
+    $queryArtikel = mysqli_query($conn, "SELECT * FROM artikel WHERE kategori_id='$kategoriId[id]'");
+  }
 
 $countData = mysqli_num_rows($queryArtikel);
 ?>

@@ -8,6 +8,9 @@
             echo "<script>
                     alert('user baru berhasil ditambahkan');
                 </script>";
+?>                
+    <meta http-equiv="refresh" content="1, url=login.php"/>
+<?php  
         } else {
             echo mysqli_error($conn);
         }

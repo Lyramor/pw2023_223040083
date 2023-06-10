@@ -4,7 +4,8 @@
     header("location: ../login.php");
     exit();
   }
-  
+
+  // mengimpor file koneksi
 require "../inc/koneksi.php";
 
 $id = $_GET['p'];

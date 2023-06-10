@@ -125,7 +125,7 @@
             </div>
             <h3>Dr. Muhammad Ali</h3>
             <p>Dokter Umum</p>
-            <a href="#">Hubungi Sekarang</a>
+            <a href="http://wa.me/6285871416346">Hubungi Sekarang</a>
         </div>
         <div class="doctor">
             <div class="doctor-img">
@@ -133,7 +133,7 @@
             </div>
             <h3>Dr. Masduki</h3>
             <p>Dokter Ahli Psikologi</p>
-            <a href="#">Hubungi Sekarang</a>
+            <a href="http://wa.me/6285871416346">Hubungi Sekarang</a>
         </div>
         <div class="doctor">
             <div class="doctor-img">
@@ -141,7 +141,7 @@
             </div>
             <h3>Dr. Rahman</h3>
             <p>Dokter Ahli Gizi</p>
-            <a href="#">Hubungi Sekarang</a>
+            <a href="http://wa.me/6285871416346">Hubungi Sekarang</a>
         </div>
         <div class="doctor">
             <div class="doctor-img">
@@ -149,7 +149,7 @@
             </div>
             <h3>Dr. Siti</h3>
             <p>Dokter Ahli Gigi</p>
-            <a href="#">Hubungi Sekarang</a>
+            <a href="http://wa.me/6285871416346">Hubungi Sekarang</a>
         </div>
         <div class="doctor">
             <div class="doctor-img">
@@ -157,7 +157,7 @@
             </div>
             <h3>Dr. Nur</h3>
             <p>Dokter Ahli Bedah</p>
-            <a href="#">Hubungi Sekarang</a>
+            <a href="http://wa.me/6285871416346">Hubungi Sekarang</a>
         </div>
     </div>
     <!-- Kontak Section End -->

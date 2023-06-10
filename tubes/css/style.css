@@ -409,7 +409,6 @@ body {
         text-align: center;
         border: 4px solid var(--primary);
         font-weight: 700;
-        margin-top: 30rem;
     }
 
     .tentang {
@@ -466,10 +465,6 @@ body {
         font-size: 55%;
     }
 
-    .navbar .navbar-nav #login {
-        margin-top: 50rem;
-    }
-
 
     .tentang {
         margin-top: 15rem;
@@ -500,7 +495,4 @@ body {
         font-size: 1.1rem;
     }
 
-    .navbar .navbar-nav #login {
-        margin-top: 55rem;
-    }
 }

@@ -5,7 +5,10 @@
     exit();
   }
 
+  // mengimpor file koneksi
 require "../inc/koneksi.php";
+
+// mengimpor file function
 require "../inc/functions.php";
 
 // Mengambil semua artikel

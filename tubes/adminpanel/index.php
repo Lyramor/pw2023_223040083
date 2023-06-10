@@ -5,10 +5,11 @@
     exit();
   }
 
+  // mengimpor file koneksi
   require "../inc/koneksi.php";
 
 
-  //memanggil jumlah kategori dan produk
+  //memanggil jumlah kategori dan artikel
   $queryKategori = mysqli_query($conn, "SELECT * FROM Kategori");
   $jumlahKategori =mysqli_num_rows($queryKategori);
 
