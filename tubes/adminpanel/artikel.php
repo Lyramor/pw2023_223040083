@@ -117,7 +117,7 @@ function generateRandomString($length = 10)
       <form id="form-tambah-artikel" action="" method="post" enctype="multipart/form-data">
         <div>
           <label for="judul">Judul</label>
-          <input type="text" id="judul" name="judul" class="form-control" autocomplete="off">
+          <input type="text" id="judul" name="judul" class="form-control" autofocus autocomplete="off">
         </div>
         <div>
           <label for="kategori">Kategori</label>

@@ -53,7 +53,7 @@ $countData = mysqli_num_rows($queryArtikel);
 
     <div class="search-box">
       <form action="artikel.php" method="get" id="searchForm">
-        <input type="text" name="keyword" id="srch" placeholder="search">
+        <input type="text" name="keyword" id="srch" placeholder="search" autofocus autocomplete="off">
         <button type="submit"><i class="fa-solid fa-search"></i></button>
       </form>
     </div>

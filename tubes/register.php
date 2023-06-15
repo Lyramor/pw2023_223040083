@@ -47,15 +47,15 @@
 
             <form action="" method="post">
                 <div class="input-field">
-                    <input type="text" class="input" name="username" placeholder="Username" required>
+                    <input type="text" class="input" name="username" placeholder="Username" autofocus autocomplete="off" required>
                     <i class="fa-solid fa-user"></i>
                 </div>
                 <div class="input-field">
-                    <input type="password" class="input" name="password" placeholder="Password" required>
+                    <input type="password" class="input" name="password" placeholder="Password" autofocus autocomplete="off" required>
                     <i class="fa-solid fa-key"></i>
                 </div>
                 <div class="input-field">
-                    <input type="password" class="input" name="password1" placeholder="Confirm Password" required>
+                    <input type="password" class="input" name="password1" placeholder="Confirm Password" autofocus autocomplete="off" required>
                     <i class="fa-solid fa-key"></i>
                 </div>
                 <div class="input-field">

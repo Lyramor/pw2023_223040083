@@ -90,11 +90,11 @@ if (isset($_POST["login"])) {
             <?php endif; ?>
             <form action="" method="post">
                 <div class="input-field">
-                    <input type="text" class="input" placeholder="Username" name="username" required>
+                    <input type="text" class="input" placeholder="Username" name="username" autofocus autocomplete="off" required>
                     <i class="fa-solid fa-user"></i>
                 </div>
                 <div class="input-field">
-                    <input type="password" class="input" placeholder="Password" name="password" required>
+                    <input type="password" class="input" placeholder="Password" name="password" autofocus autocomplete="off" required>
                     <i class="fa-solid fa-key"></i>
                 </div>
                 <div class="input-field">

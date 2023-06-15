@@ -78,7 +78,7 @@
     <form action="" method="post">
       <div>
         <label for="kategori">Kategori</label>
-        <input type="text" id="kategori" name="kategori" placeholder="input nama kategori" class="form-control">
+        <input type="text" id="kategori" name="kategori" placeholder="input nama kategori" class="form-control" autofocus autocomplete="off">
       </div>
       <div class="mt-3">
         <button class="btn btn-primary" type="submit" name="simpankategori">Simpan</button>
