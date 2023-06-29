@@ -40,7 +40,6 @@
 
 
         <div class="hamburger">
-            <a href="userpanel/userpanel.php"style="color: #464646"><i class="fa-solid fa-user fa-xl" ></i></a>
             <a href="#" id="hamburger" style="margin-left: 1rem;" class="fa-solid fa-bars fa-xl"></a>
         </div>
 
