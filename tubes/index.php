@@ -35,7 +35,15 @@
             <a href="#layanan">About Us</a>
             <a href="#artikel">Artikel</a>
             <a href="#kontak">Kontak</a>
-            <a href="userpanel/logout_user.php" id="login">Logout</a>
+            <?php                
+                if (isset($_SESSION['username'])) {
+                    // Jika pengguna sudah login, tampilkan tombol Logout
+                    echo '<a href="logout.php" id="login">Logout</a>';
+                } else {
+                    // Jika pengguna belum login, tampilkan tombol Masuk
+                    echo '<a href="login.php" id="login">Login</a>';
+                }
+            ?>
         </div>
 
 
@@ -56,7 +64,7 @@
             <?php } else { ?>
             <p>Chat dokter dan update informasi seputar kesehatan.</p>
             <?php } ?>
-            <a href="login.php" class="cta">Login</a>
+            <a href="register.php" class="cta">Registrasi</a>
         </main>
     </section>
     <!-- Hero Section End -->
