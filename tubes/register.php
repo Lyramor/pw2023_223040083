@@ -9,7 +9,7 @@
                     alert('user baru berhasil ditambahkan');
                 </script>";
 ?>                
-    <meta http-equiv="refresh" content="1, url=login.php"/>
+    <meta http-equiv="refresh" content="1, url=login1.php"/>
 <?php  
         } else {
             echo mysqli_error($conn);
@@ -19,58 +19,53 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Register</title>
 
     <!-- css -->
-    <link rel="stylesheet" href="css/login.css">
-
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/login2.css">
 </head>
-
 <body>
-    <div class="box">
+    <div class="main-container">
+        <input type="checkbox" id="slide" />
         <div class="container">
-            <div class="right-header">
-                <a href="index.php"><i class="fa-solid fa-x" style="color : #464646"></i></a>
-            </div>
-            <div class="top-header">
-                <header>Register</header>
+
+        <div class="signup-container">
+        <div class="text">Register</div>
+
+        <form action="" method="post">
+            <div class="data">
+                <label for="">Username</label>
+                <input type="text" name="username" autofocus autocomplete="off" required />
             </div>
 
-            <form action="" method="post">
-                <div class="input-field">
-                    <input type="text" class="input" name="username" placeholder="Username" autofocus autocomplete="off" required>
-                    <i class="fa-solid fa-user"></i>
-                </div>
-                <div class="input-field">
-                    <input type="password" class="input" name="password" placeholder="Password" autofocus autocomplete="off" required>
-                    <i class="fa-solid fa-key"></i>
-                </div>
-                <div class="input-field">
-                    <input type="password" class="input" name="password1" placeholder="Confirm Password" autofocus autocomplete="off" required>
-                    <i class="fa-solid fa-key"></i>
-                </div>
-                <div class="input-field">
-                    <a href="index.php"><input type="submit" name="register" class="submit" value="Register"></a>
-                </div>
-            </form>
-
-
-            <div class="bottom">
-                <div class="left">
-                    <label><a href="login.php">Login</a></label>
-                </div>
+            <div class="data">
+                <label for="">Password</label>
+                <input type="password" name="password" required />
             </div>
+
+            <div class="data">
+                <label for="">Confirm Password</label>
+                <input type="password" name="password1" required />
+            </div>
+
+            <div class="btn-signup">
+            <button type="submit" name="register" id="register" >Register</button>
+            </div>
+
+            <div class="signup-link">
+            Udah punya akun ?
+            <a href="login.php">Login</a>
+            </div>
+            <div class="signup-link">
+                <a href="index.php" style="text-decoration: none; color: black; ">kembali</a>
+            </div>
+        </form>
         </div>
     </div>
+    </div>
 </body>
-
 </html>

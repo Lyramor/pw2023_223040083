@@ -35,7 +35,7 @@
             <a href="#layanan">About Us</a>
             <a href="#artikel">Artikel</a>
             <a href="#kontak">Kontak</a>
-            <?php                
+            <?php   
                 if (isset($_SESSION['username'])) {
                     // Jika pengguna sudah login, tampilkan tombol Logout
                     echo '<a href="logout.php" id="login">Logout</a>';
@@ -44,6 +44,8 @@
                     echo '<a href="login.php" id="login">Login</a>';
                 }
             ?>
+
+
         </div>
 
 

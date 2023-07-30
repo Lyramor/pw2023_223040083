@@ -1,6 +1,7 @@
 <?php
 session_start();
 require "inc/koneksi.php";
+require 'inc/functions.php';
 
 // Cek cookie
 if (isset($_COOKIE['id']) && isset($_COOKIE['key'])) {
@@ -58,56 +59,53 @@ if (isset($_POST["login"])) {
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-
     <!-- css -->
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/login2.css">
 
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <div class="box">
-        <div class="container">
-            <div class="right-header">
-                <a href="index.php"><i class="fa-solid fa-x" style="color: #464646"></i></a>
-            </div>
-            <div class="top-header">
-                <span>Have an account?</span>
-                <header>Login</header>
+
+    <div class="main-container">
+    <input type="checkbox" id="slide" />
+    <div class="container">
+        <div class="login-container">
+        <div class="text">Login</div>
+
+        <?php if( isset($error)) : ?>
+        <p style="color: red; font-style: italic;"> Username / Password salah</p>;
+        <?php endif; ?>
+
+        <form action="" method="post">
+            <div class="data">
+            <label for="">Username</label>
+            <input type="text" name="username" id="username" autofocus autocomplete="off" required />
             </div>
 
-            <?php if (isset($error)) : ?>
-                <p style="color: red;">Username / Password salah</p>
-            <?php endif; ?>
-            <form action="" method="post">
-                <div class="input-field">
-                    <input type="text" class="input" placeholder="Username" name="username" autofocus autocomplete="off" required>
-                    <i class="fa-solid fa-user"></i>
-                </div>
-                <div class="input-field">
-                    <input type="password" class="input" placeholder="Password" name="password" autofocus autocomplete="off" required>
-                    <i class="fa-solid fa-key"></i>
-                </div>
-                <div class="input-field">
-                    <input type="submit" class="submit" name="login" value="Login">
-                </div>
-            </form>
-
-            <div class="bottom">
-                <div class="left">
-                    <label><a href="register.php">Register</a></label>
-                </div>
+            <div class="data">
+            <label for="">Password</label>
+            <input type="password" name="password" id="password" required />
             </div>
+
+            <div class="btn-login">
+                <button type="login" name="login">login</button>
+            </div>
+
+            <div class="signup-link">
+                Belum punya akun ?<a href="register.php">Register now</a>
+            </div>
+            <div class="signup-link">
+                <a href="index.php" style="text-decoration: none; color: black; ">kembali</a>
+            </div>
+        </form>
         </div>
+    </div>
+    </div>
     </div>
 </body>
 
