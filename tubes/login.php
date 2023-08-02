@@ -65,7 +65,7 @@ if (isset($_POST["login"])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
     <!-- css -->
-    <link rel="stylesheet" href="css/login2.css">
+    <link rel="stylesheet" href="css/login3.css">
 
 </head>
 
@@ -78,7 +78,7 @@ if (isset($_POST["login"])) {
         <div class="text">Login</div>
 
         <?php if( isset($error)) : ?>
-        <p style="color: red; font-style: italic;"> Username / Password salah</p>;
+        <p style="color: red; font-style: italic;"> Username / Password salah</p>
         <?php endif; ?>
 
         <form action="" method="post">

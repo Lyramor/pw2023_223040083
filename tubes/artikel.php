@@ -63,11 +63,20 @@ $countData = mysqli_num_rows($queryArtikel);
       <a href="index.php">About Me</a>
       <a href="index.php">Artikel</a>
       <a href="index.php">Kontak</a>
-      <a href="userpanel/logout_user.php" id="logout">Logout</a>
+      <?php
+      session_start();
+      // Cek apakah sudah login berdasarkan session
+      if (isset($_SESSION['login']) && $_SESSION['login'] === true) {
+          // Jika pengguna sudah login, tampilkan tombol Logout
+          echo '<a href="logout.php" id="login">Logout</a>';
+      } else {
+          // Jika pengguna belum login, tampilkan tombol Masuk
+          echo '<a href="login.php" id="login">Login</a>';
+      }
+      ?>
     </div>
 
     <div class="hamburger">
-    <a href="userpanel/userpanel.php"style="color: #464646"><i class="fa-solid fa-user fa-xl" ></i></a>
       <a href="#" id="hamburger" class="fa-solid fa-bars fa-xl"></a>
     </div>
   </div>
